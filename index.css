@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+#navbar{
+background-color: white;
+}
+
+#logo{
+font-size: 36px;
+font-weight: 700;
+color: black;
+text-shadow: 0px 1px 1px black;
+margin-bottom: 5px;
+}
+
+#logo span{  color: #ffa500; }
+
+.navbar-toggler span{
+    background-color: #ffa500;
+
+}
+
+.navbar-nav{
+    margin-left: 20px;
+}
+
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+
+.nav-item .nav-link:hover{
+    background-color: #ffa500;
+    
+}
+
+#navbar form button{
+background: #ffa500;
+color: white;
+border: none;
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url(./images/tour2.jpg);
+    background-size: cover;
+}
+
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+
+.home .content h1{
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px black;
+}
+
+
+.home .content h2{
+    color: white;
+    font-size: 70px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+
+.changecontent::after{
+    content: ' ';
+    color: #ffa500;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+
+@keyframes changetext{
+    0%{ content: "France";}
+    10%{ content: "Spain";}
+    20%{ content: "Greece";}
+    30%{ content: "Switzerland";}
+    40%{ content: "Thailand";}
+    50%{ content: "Maldives";}
+    60%{ content: "Turkey";}
+}
+.home .content p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.home .content a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.home .content a:hover{
+    background-color: #ffa500;
+    color: white;
+}
+
+.book{
+    background: #f9f9f9;
+    padding: 50px;
+}
+
+.book-text h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+
+.book-text h1 span{  color: #ffa500; }
+
+.book .card{  box-shadow: 0px 5px 5px -6px black;   border-radius: 10px; }
+
+.book .row{  margin-top: 30px; }
+
+.book form input,textarea{ padding: 10px; color: black; border: none;  outline: none; font-size: 15px; border-radius: 10px; box-shadow: 0px 5px 5px -6px black; }
+
+.book .submit{ width: 160px;  font-size: 16px; font-weight: 550;  background: #ffa500; margin-top: 10px; transition: 0.5s; }
+
+.pack-text h1{ text-align: center;  margin-top: 40px; margin-bottom: 30px; font-weight: 600;  }
+
+.pack-text h1 span{ color: #ffa500;}
+
+
+.packages .card{ border-radius: 5px; border: none; box-shadow: rgba(0,0,0,0.1) 0px 4px 12px; width: 100%;}
+
+.packages .card img{ border-radius: 5px;}
+
+.packages .card .card-body{ background: transparent;}
+
+.packages .card .card-body h3{ font-size: 25px; font-weight: 600; }
+
+.packages .card .card-body p{ font-size: 15px;}
+
+.checked{ color: #ffa500;}
+
+.packages .card .card-body h6{ font-weight: 600;}
+
+.serv-text h1{ text-align: center;  margin-top: 60px;  font-weight: 600;  }
+
+.serv-text h1 span{ color: #ffa500;}
+
+.services{ background: #f9f9f9; margin-top: 50px;}
+
+.services .card{ box-shadow: rgba(0,0,0,0.1) 0px 4px 12px ; border: none; cursor: pointer; }
+
+.services .card i{ font-size: 80px; text-align: center; color: #ffa500; margin-top: 20px;}
+
+.services .card .card-body h3{ font-weight: 600;}
+
+.services .card .card-body{ text-align: center;}
+
+.gall-text h1{ text-align: center;  margin-top: 40px; margin-bottom: 30px; font-weight: 600;  }
+
+.gall-text h1 span{ color: #ffa500;}
+
+.gallery{ margin-top: 30px;}
+
+.gallery .card{box-shadow: rgba(0,0,0,0.1) 0px 4px 12px ; border: none; cursor: pointer; }
+
+.gallery .card img{ border-radius: 10px; transition: 0.5s;}
+
+.gallery .card img:hover{ transform: scale(1.1);}
+
+#footer{ width: 100%; margin-top: 150px; text-align: center; background-color: black;}
+
+#footer h1{ font-weight: 600; padding: 30px; text-shadow: 0px 0px 1px black; color: white;}
+
+#footer h1 span{ color: #ffa500;}
+
+#footer p{ font-weight: 300; font-size: 20px;}
+
+.social-links i{ padding: 10px; border-radius: 5px; font-size: 20px; background: white; color: black; margin-left: 10px; margin-bottom: 10px; transition: 0.5s ease; cursor: pointer;}
+
+.social-links i:hover{ background: #ffa500;}
+
+
+/* ------------responsive----------- */
+
+@media (max-width:500){
+    .home{ background-position: 50%;}
+
+    .home .content h1{ font-size: 25px; }
+
+    .home .content h2{ font-size: 38px; }
+
+    .home .content p{ font-size: 13px;}
+}
